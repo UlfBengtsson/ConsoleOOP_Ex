@@ -6,7 +6,14 @@ namespace ConsoleOOP_Ex
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person uffe = new Person("Ulf Bengtsson");
+            uffe.Licenses.Add("B");
+
+            Car bmw = new Car("BMW", "525i", "SPB704", uffe);
+
+            bmw.Info();
+
+            Console.ReadKey();
         }
     }
 }
